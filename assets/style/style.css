@@ -1,0 +1,657 @@
+/*================FONTS=================*/
+@font-face {
+  font-family: 'montRegular';
+  src: url("../fonts/Montserrat-Regular.otf"); }
+@font-face {
+  font-family: 'ralewayMedium';
+  src: url("../fonts/Raleway-Medium.ttf"); }
+@font-face {
+  font-family: 'robotoRegular';
+  src: url("../fonts/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: 'montSemiBold';
+  src: url("../fonts/Montserrat-SemiBold.otf"); }
+@font-face {
+  font-family: 'montLight';
+  src: url("../fonts/Montserrat-Light.otf"); }
+@font-face {
+  font-family: 'robotoCondensBold';
+  src: url("../fonts/RobotoCondensed-Bold.ttf"); }
+@font-face {
+  font-family: 'ralewayRegular';
+  src: url("../fonts/Raleway-Regular.ttf"); }
+@font-face {
+  font-family: 'ralewaySemiBold';
+  src: url("../fonts/Raleway-SemiBold.ttf"); }
+.right.carousel-control, .left.carousel-control {
+  display: none; }
+
+.activeLink {
+  color: #ef8e00;
+  border-color: #ef8e00; }
+
+.navbar {
+  border: none !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all linear 250ms;
+  box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2); }
+  .navbar:hover {
+    background-color: rgba(255, 255, 255, 0.9); }
+
+body, html {
+  width: 100%;
+  overflow-x: hidden; }
+
+.smaller {
+  padding-top: 25px !important;
+  padding-bottom: 20px !important; }
+
+body {
+  min-width: 320px !important;
+  background-color: aqua; }
+  body header nav button.navbar-toggle span {
+    background-color: #5e6060 !important; }
+  body header nav ul {
+    margin-right: 80px !important; }
+    body header nav ul li {
+      margin-left: 30px; }
+      body header nav ul li a {
+        border-bottom: 4px solid transparent;
+        font-family: 'montRegular';
+        font-weight: 400;
+        font-size: 14px;
+        display: inline-block;
+        padding: 10px 0px !important;
+        padding-bottom: 25px !important;
+        padding-top: 50px !important;
+        color: #5e6060;
+        transition: padding 250ms linear;
+        -moz-transition: padding 250ms linear;
+        -o-transition: padding 250ms linear;
+        -webkit-transition: padding 250ms linear; }
+        body header nav ul li a:hover {
+          border-bottom: 4px solid #3287ae;
+          color: #3287ae !important;
+          background-color: transparent !important; }
+  body #jumbo {
+    width: 100%;
+    background-image: url(../images/images/polygonBack.jpg);
+    background-size: cover;
+    border-bottom: 2px solid white; }
+    body #jumbo div div div img {
+      padding-top: 250px;
+      padding-bottom: 150px;
+      width: 90%; }
+  body #jumboWithBottom {
+    width: 100%;
+    background-image: url(../images/images/shapeBottom.png), url(../images/images/polygonBack.jpg);
+    background-size: contain, cover;
+    background-position: center bottom, left top;
+    background-repeat: no-repeat, no-repeat; }
+    body #jumboWithBottom div div div img {
+      padding-top: 250px;
+      padding-bottom: 150px;
+      width: 90%; }
+  body #aboutUs {
+    width: 100%;
+    background-image: url(../images/images/aboutBack.jpg);
+    background-size: cover;
+    padding-top: 140px; }
+    body #aboutUs div div.carousel-inner div.item div {
+      margin-bottom: 120px !important; }
+      body #aboutUs div div.carousel-inner div.item div h3 {
+        font-family: 'ralewaySemiBold';
+        color: #d5d7d7;
+        font-size: 48px;
+        margin-bottom: 40px !important; }
+      body #aboutUs div div.carousel-inner div.item div p {
+        color: #dddede;
+        font-family: 'ralewayRegular';
+        padding-bottom: 30px;
+        font-size: 16px; }
+    body #aboutUs div div.carousel-inner div.item div.colBorder {
+      border-right: 1px solid rgba(197, 199, 199, 0.2); }
+  body #principles {
+    width: 100%;
+    background-image: url(../images/images/principlesBack.jpg);
+    background-size: cover;
+    padding-bottom: 85px; }
+    body #principles div div h2.title {
+      font-family: 'robotoCondensBold';
+      margin-top: 40px;
+      margin-bottom: 75px;
+      font-size: 42px;
+      text-transform: uppercase; }
+    body #principles div div div.pricipeIcons img {
+      position: relative;
+      margin: auto;
+      width: 60%;
+      height: auto;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear; }
+      body #principles div div div.pricipeIcons img:hover {
+        opacity: 0.7; }
+    body #principles div div div.pricipeIcons img + h3 {
+      font-family: 'robotoCondensBold';
+      font-size: 40px;
+      cursor: default;
+      margin-bottom: 20px; }
+    body #principles div div div.pricipeIcons p {
+      font-family: 'ralewayRegular'; }
+  body #contactSection {
+    box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    background-image: url(../images/images/office.png);
+    background-position: 50% 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding-bottom: 100px; }
+    body #contactSection div div.contactDetails {
+      margin-top: 173px; }
+      body #contactSection div div.contactDetails p {
+        font-family: 'montSemiBold';
+        color: #c6c1f3;
+        font-size: 20px; }
+        body #contactSection div div.contactDetails p.phone:before {
+          content: url(../images/icons/phone.png) " ";
+          margin-right: 10px;
+          position: relative;
+          top: 3px; }
+        body #contactSection div div.contactDetails p.mail:before {
+          content: url(../images/icons/mail.png) " ";
+          position: relative;
+          margin-right: 5px; }
+        body #contactSection div div.contactDetails p.address:before {
+          content: url(../images/icons/map.png) " ";
+          position: relative;
+          margin-right: 10px;
+          top: 2px; }
+        body #contactSection div div.contactDetails p.address span {
+          position: relative;
+          left: 25px; }
+        body #contactSection div div.contactDetails p span {
+          font-family: 'montLight';
+          color: white;
+          font-size: 18px;
+          font-style: italic !important; }
+          body #contactSection div div.contactDetails p span a {
+            color: white; }
+            body #contactSection div div.contactDetails p span a:hover {
+              color: #e6e6e6;
+              text-decoration: none; }
+      body #contactSection div div.contactDetails .mediaIcons {
+        padding-left: 50px;
+        margin-top: 20px; }
+        body #contactSection div div.contactDetails .mediaIcons a {
+          margin-right: 7px; }
+          body #contactSection div div.contactDetails .mediaIcons a:hover {
+            opacity: 0.7; }
+          body #contactSection div div.contactDetails .mediaIcons a:last-child {
+            margin-right: 0px; }
+    body #contactSection div div div h3 {
+      margin-top: 60px !important;
+      margin-bottom: 60px !important;
+      color: white;
+      font-family: 'ralewayMedium';
+      font-size: 50px; }
+    body #contactSection div div div form ::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      font-family: 'robotoRegular';
+      color: white; }
+    body #contactSection div div div form :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      font-family: 'robotoRegular';
+      color: white; }
+    body #contactSection div div div form ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      font-family: 'robotoRegular';
+      color: white; }
+    body #contactSection div div div form :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-family: 'robotoRegular';
+      color: white; }
+    body #contactSection div div div form :placeholder-shown {
+      /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+      font-family: 'robotoRegular';
+      color: white; }
+    body #contactSection div div div form input {
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 0px;
+      margin-bottom: 19px;
+      height: 50px;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear;
+      color: white; }
+      body #contactSection div div div form input:focus {
+        outline: 0px !important;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        background-color: rgba(128, 128, 128, 0.5); }
+    body #contactSection div div div form input[type="email"] {
+      width: 47%; }
+    body #contactSection div div div form input[type="tel"] {
+      width: 47%; }
+    body #contactSection div div div form textarea {
+      background-color: transparent;
+      border: 2px solid white;
+      resize: none;
+      height: 250px;
+      margin-bottom: 19px;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear;
+      padding-top: 10px;
+      color: white; }
+      body #contactSection div div div form textarea:focus {
+        outline: 0px !important;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        background-color: rgba(128, 128, 128, 0.5); }
+    body #contactSection div div div form button[type="submit"] {
+      min-width: 130px !important;
+      background-color: transparent;
+      border-radius: 0px;
+      border: 2px solid white;
+      color: white;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear; }
+      body #contactSection div div div form button[type="submit"]:hover {
+        background-color: rgba(128, 128, 128, 0.5); }
+  body #map {
+    height: 400px;
+    width: 100%;
+    background-color: aqua; }
+  body footer {
+    background-image: url(../images/images/footerPolygons.png);
+    background-color: white;
+    background-size: cover;
+    background-position: 0 55%; }
+    body footer div p {
+      margin-top: 35px;
+      margin-bottom: 23px;
+      font-family: 'robotoRegular';
+      color: #7b7b7b;
+      font-size: 16px; }
+    body footer div div.iconsBlock a {
+      display: inline-block;
+      margin-right: 7px;
+      margin-bottom: 23px; }
+      body footer div div.iconsBlock a img {
+        width: 35px;
+        height: auto;
+        transition: all 250ms linear;
+        -moz-transition: all 250ms linear;
+        -o-transition: all 250ms linear;
+        -webkit-transition: all 250ms linear; }
+        body footer div div.iconsBlock a img:hover {
+          opacity: 0.8; }
+    body footer div a {
+      font-size: 16px;
+      color: #7b7b7b;
+      font-family: 'montLight';
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 5px; }
+      body footer div a span {
+        color: #7b7b7b;
+        font-family: 'montSemiBold'; }
+      body footer div a:hover {
+        text-decoration: none;
+        color: #959595; }
+    body footer div p.copyright {
+      margin-top: 25px;
+      color: #9f9f9e;
+      font-size: 14px;
+      margin-bottom: 10px; }
+
+/*================MEDIA QUERIES===============*/
+@media (max-width: 1199px) {
+  #contactSection {
+    background-image: url(../images/images/office.png);
+    background-position: 50% 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; }
+    #contactSection div div.contactDetails {
+      margin-top: 227px !important; }
+      #contactSection div div.contactDetails p {
+        font-family: 'montSemiBold';
+        color: #c6c1f3;
+        font-size: 18px !important; }
+        #contactSection div div.contactDetails p.phone:before {
+          content: url(../images/icons/phone.png) " ";
+          margin-right: 10px;
+          position: relative;
+          top: 3px; }
+        #contactSection div div.contactDetails p.mail:before {
+          content: url(../images/icons/mail.png) " ";
+          position: relative;
+          margin-right: 5px; }
+        #contactSection div div.contactDetails p.address:before {
+          content: url(../images/icons/map.png) " ";
+          position: relative;
+          margin-right: 10px;
+          top: 2px; }
+        #contactSection div div.contactDetails p.address span {
+          position: relative;
+          left: 25px; }
+        #contactSection div div.contactDetails p span {
+          font-family: 'montLight';
+          color: white;
+          font-size: 16px !important;
+          font-style: italic !important; }
+    #contactSection div div div h3 {
+      margin-top: 60px !important;
+      margin-bottom: 60px !important;
+      color: white;
+      font-family: 'ralewayMedium';
+      font-size: 50px; }
+    #contactSection div div div form input {
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 0px;
+      margin-bottom: 19px;
+      height: 50px;
+      transition: all 250ms linear;
+      color: white; }
+      #contactSection div div div form input:focus {
+        outline: 0px !important;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        background-color: rgba(128, 128, 128, 0.5); }
+    #contactSection div div div form input[type="email"] {
+      width: 47%; }
+    #contactSection div div div form input[type="tel"] {
+      width: 47%; }
+    #contactSection div div div form textarea {
+      background-color: transparent;
+      border: 2px solid white;
+      resize: none;
+      height: 250px;
+      margin-bottom: 19px;
+      transition: all 250ms linear;
+      padding-top: 10px; }
+      #contactSection div div div form textarea:focus {
+        outline: 0px !important;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        background-color: rgba(128, 128, 128, 0.5); }
+    #contactSection div div div form button[type="submit"] {
+      background-color: transparent;
+      border-radius: 0px;
+      border: 2px solid white;
+      color: white;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      transition: all 250ms linear; }
+      #contactSection div div div form button[type="submit"]:hover {
+        background-color: rgba(128, 128, 128, 0.5); } }
+@media (max-width: 991px) {
+  #principles {
+    width: 100%;
+    background-image: url(../images/images/principlesBack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left -10px; }
+    #principles div div h2.title {
+      font-family: 'robotoCondensBold';
+      margin-top: 40px;
+      margin-bottom: 75px;
+      font-size: 42px;
+      text-transform: uppercase; }
+    #principles div div div.pricipeIcons img {
+      position: relative;
+      margin: auto;
+      width: 75% !important;
+      height: auto;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear; }
+      #principles div div div.pricipeIcons img:hover {
+        opacity: 0.7; }
+    #principles div div div.pricipeIcons img + h3 {
+      font-family: 'robotoCondensBold';
+      font-size: 40px;
+      cursor: default;
+      margin-bottom: 20px; }
+    #principles div div div.pricipeIcons p {
+      font-family: 'ralewayRegular'; }
+
+  #contactSection {
+    background-image: url(../images/images/office.png);
+    background-position: 50% 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; }
+    #contactSection div div.contactDetails {
+      margin-top: 80px !important; }
+      #contactSection div div.contactDetails p {
+        font-family: 'montSemiBold';
+        color: #c6c1f3;
+        font-size: 20px; }
+        #contactSection div div.contactDetails p.phone:before {
+          content: url(../images/icons/phone.png) " ";
+          margin-right: 10px;
+          position: relative;
+          top: 3px; }
+        #contactSection div div.contactDetails p.mail:before {
+          content: url(../images/icons/mail.png) " ";
+          position: relative;
+          margin-right: 5px; }
+        #contactSection div div.contactDetails p.address:before {
+          content: url(../images/icons/map.png) " ";
+          position: relative;
+          margin-right: 10px;
+          top: 2px; }
+        #contactSection div div.contactDetails p.address span {
+          position: relative;
+          left: 25px; }
+        #contactSection div div.contactDetails p span {
+          font-family: 'montLight';
+          color: white;
+          font-size: 18px;
+          font-style: italic !important; }
+      #contactSection div div.contactDetails .mediaIcons {
+        padding-left: 50px;
+        margin-top: 20px; }
+        #contactSection div div.contactDetails .mediaIcons a {
+          margin-right: 7px; }
+          #contactSection div div.contactDetails .mediaIcons a:hover {
+            opacity: 0.7; }
+          #contactSection div div.contactDetails .mediaIcons a:last-child {
+            margin-right: 0px; }
+    #contactSection div div div h3 {
+      margin-top: 60px !important;
+      margin-bottom: 60px !important;
+      color: white;
+      font-family: 'ralewayMedium';
+      font-size: 50px; }
+    #contactSection div div div form ::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      font-family: 'robotoRegular';
+      color: white; }
+    #contactSection div div div form :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      font-family: 'robotoRegular';
+      color: white; }
+    #contactSection div div div form ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      font-family: 'robotoRegular';
+      color: white; }
+    #contactSection div div div form :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-family: 'robotoRegular';
+      color: white; }
+    #contactSection div div div form :placeholder-shown {
+      /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+      font-family: 'robotoRegular';
+      color: white; }
+    #contactSection div div div form input {
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 0px;
+      margin-bottom: 19px;
+      height: 50px;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear;
+      color: white; }
+      #contactSection div div div form input:focus {
+        outline: 0px !important;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        background-color: rgba(128, 128, 128, 0.5); }
+    #contactSection div div div form input[type="email"] {
+      width: 47%; }
+    #contactSection div div div form input[type="tel"] {
+      width: 47%; }
+    #contactSection div div div form textarea {
+      background-color: transparent;
+      border: 2px solid white;
+      resize: none;
+      height: 250px;
+      margin-bottom: 19px;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear;
+      padding-top: 10px; }
+      #contactSection div div div form textarea:focus {
+        outline: 0px !important;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        background-color: rgba(128, 128, 128, 0.5); }
+    #contactSection div div div form button[type="submit"] {
+      min-width: 130px !important;
+      background-color: transparent;
+      border-radius: 0px;
+      border: 2px solid white;
+      color: white;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear; }
+      #contactSection div div div form button[type="submit"]:hover {
+        background-color: rgba(128, 128, 128, 0.5); } }
+@media (max-width: 833px) {
+  .navbar-header {
+    float: none; }
+
+  .navbar-left, .navbar-right {
+    float: none !important; }
+
+  .navbar-toggle {
+    display: block; }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+
+  .navbar-nav > li {
+    float: none; }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .collapse.in {
+    display: block !important; } }
+@media (max-width: 767px) {
+  #principles {
+    width: 100%;
+    background-image: url(../images/images/principlesBack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left -10px; }
+    #principles div div h2.title {
+      font-family: 'robotoCondensBold';
+      margin-top: 40px;
+      margin-bottom: 75px;
+      font-size: 42px;
+      text-transform: uppercase; }
+    #principles div div div.pricipeIcons img {
+      position: relative;
+      margin: auto;
+      width: 60%;
+      height: auto;
+      transition: all 250ms linear;
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -o-transition: all 250ms linear; }
+      #principles div div div.pricipeIcons img:hover {
+        opacity: 0.7; }
+    #principles div div div.pricipeIcons img + h3 {
+      font-family: 'robotoCondensBold';
+      font-size: 25px !important;
+      cursor: default;
+      margin-bottom: 20px; }
+    #principles div div div.pricipeIcons p {
+      font-family: 'ralewayRegular'; }
+
+  #jumbo {
+    width: 100%;
+    background-image: url(../images/images/polygonBack.jpg);
+    background-size: cover; }
+    #jumbo div div div img {
+      padding-top: 150px !important;
+      padding-bottom: 100px !important;
+      width: 60% !important; } }
+@media (max-width: 700px) {
+  footer {
+    background-image: url(../images/images/footerPolygons.png);
+    background-color: white;
+    background-size: auto !important;
+    background-position: 0 55%; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.4/angular-material.min.js"></script>-->
+        <script src="assets/script/angular-1.5.0/angular.min.js"></script>
+        <script src="assets/script/angular-1.5.0/angular-route.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+            
+        <link rel="stylesheet" href="assets/style/style.css">
+        <script src="assets/script/angularScript.js"></script>
+        <script src="assets/script/script.js"></script>
+        
+        
+        <!-- IMPORTING FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body ng-app="myApp" ng-controller="controller">
+        <header>
+            <nav class="navbar navbar-fixed-top">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                  </button>
+                  <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav pull-right">
+                    <li ng-repeat="nav in navigacija">
+                        <a class="navigacija" ng-href="{{nav.url}}">{{nav.name | uppercase}}</a>
+                    </li>
+                </ul>
+                  
+                </div>
+              </div>
+            </nav>
+        </header>
+        
+        <!-- ============ SECTION WITH LOGO ================ -->
+        <section id="jumbo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 text-center">
+                        <img src="assets/images/images/logo.png">
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        <!-- ============ CONTACT SECTION =============== -->
+        <section id="contactSection">
+            <div class="container">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row text-center">
+                        <h3>Get in touch with us!</h3>
+                        
+                        <form method="post" name="contact" ng-submit="contact.$valid && sendMessage(contact)">
+                            <input type="text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" placeholder="Enter name*" ng-model="contact.name"                                     required>
+                            <input type="email" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" placeholder="Enter email*" ng-model="contact.email"                                     required ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/">
+                            <input type="tel" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right" placeholder="Enter phone" ng-model="contact.tel">
+                            <textarea class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  placeholder="Message*" required ng-model="contact.message"></textarea>
+                            <button type="submit" class="col-lg-5 col-md-5 col-sm-5 col-xs-5">Send Message</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="contactDetails col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+                    <p class="phone">Call us:&nbsp;&nbsp;&nbsp;<span><a href="tel:{{phone}}">{{phone}}</a></span></p>
+                    <p class="mail">Email us:&nbsp;&nbsp;&nbsp;<span><a href="mailto:{{emailAddress}}">{{emailAddress}}</a></span></p>
+                    <p class="address">Address:<br>
+                        <span ng-bind-html="placeAddress">
+                        </span><br>
+                    </p>
+                    <div class="mediaIcons">
+                        <a href="#"><img src="assets/images/icons/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="assets/images/icons/google.png" alt="google+"></a>
+                        <a href="#"><img src="assets/images/icons/linkedin.png" alt="linkedin"></a>
+                        <a href="#"><img src="assets/images/icons/tweeter.png" alt="tweeter"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ======== GOOGLE MAPS LOCATION ========== -->
+        <div id="map">
+            
+        </div>
+        
+        <!-- ========= FOOTER ========= -->
+        <footer>
+            <div class="container-fluid text-center">
+                <p>We are located in Sarajevo, Bosnia and Herzegovina.<br>
+                    If you would like to work with us or just say hello please contact us.</p>
+                <div class="iconsBlock">
+                    <a href="#"><img src="assets/images/icons/fbGray.png" alt="facebook"></a>
+                    <a href="#"><img src="assets/images/icons/googleGray.png" alt="google+"></a>
+                    <a href="#"><img src="assets/images/icons/linkedGray.png" alt="linkedin"></a>
+                    <a href="#"><img src="assets/images/icons/tweetGray.png" alt="tweeter"></a>
+                </div>
+                <a href="mailto:contact@init.ba">contact<span>@init.ba</span></a><br>
+                <i><a href="tel:{{phone}}">{{phone}}</a></i>
+                <p class="copyright">Copyright 2016. Init dd. Sarajevo. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw--VVxtoBGmIpP6u_eVcfLQP8DCrTHMo&callback=initMap"></script>-->
+        
+    </body>
+</html>
